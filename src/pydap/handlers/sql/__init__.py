@@ -326,10 +326,10 @@ class SQLData(IterData):
 
 def parse_queries(selection, mapping):
     """Convert an Opendap selection to an SQL query.
-    
+
     Returns the query and the params to be passed, so that string interpolation
     is done by the cursor.
-    
+
     """
     out = []
     params = []
