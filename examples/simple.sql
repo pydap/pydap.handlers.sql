@@ -30,7 +30,6 @@ lon:
     long_name: longitude
     units: degrees_east
     missing_value: -9999
-    type: Float32
     global_range: [-180, 180]
     valid_range: !Query 'SELECT min(lon), max(lon) FROM test'
 
@@ -41,7 +40,6 @@ lat:
     long_name: latitude
     units: degrees_north
     missing_value: -9999
-    type: Float32
     global_range: [-90, 90]
     valid_range: !Query 'SELECT min(lat), max(lat) FROM test'
 
@@ -51,19 +49,16 @@ time:
     grads_dim: t
     long_name: time
     missing_value: -9999
-    type: String
 
 depth: 
     axis: Z
     col: depth
     long_name: depth
     missing_value: -9999
-    type: Float32
     units: m
 
 temp:
     col: temp
     long_name: temperature
     missing_value: -9999
-    type: Float32
     units: degc
