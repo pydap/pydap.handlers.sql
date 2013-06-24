@@ -1,7 +1,7 @@
 pydap.handlers.sql
 ==================
 
-This handler allows Pydap to server data from any relational database supported
+This handler allows Pyda to server data from any relational database supported
 by [SQLAlchemy](http://www.sqlalchemy.org/). Each dataset is represented by a
 YAML file (with extension `.sql`) that defines the database connection,
 variables and other associated metadata. Here's a simple example:
