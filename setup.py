@@ -1,12 +1,8 @@
 from setuptools import setup, find_packages
 import sys, os
 
-here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.rst')).read()
-NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
-
-version = '0.4.1'
+version = '0.4.0'
 
 install_requires = [
     # List your project dependencies here.
@@ -22,7 +18,7 @@ install_requires = [
 setup(name='pydap.handlers.sql',
     version=version,
     description="An SQL handler for Pydap",
-    long_description=README + '\n\n' + NEWS,
+    long_description="",
     classifiers=[
       # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     ],
