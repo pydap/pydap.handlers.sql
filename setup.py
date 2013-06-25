@@ -106,7 +106,7 @@ prefixed by the token ``!Query``.
     keywords="sql database opendap dods dap data science climate oceanography meteorology'",
     author='Roberto De Almeida',
     author_email='roberto@dealmeida.net',
-    url='http://pydap.org/handlers.html#sql',
+    url='https://github.com/robertodealmeida/pydap.handlers.sql',
     license='MIT',
     packages=find_packages('src'),
     package_dir = {'': 'src'},
