@@ -53,6 +53,7 @@ import operator
 from sqlalchemy import create_engine
 import yaml
 import numpy as np
+from pkg_resources import get_distribution
 
 from pydap.model import *
 from pydap.lib import quote
@@ -75,6 +76,7 @@ class SQLHandler(BaseHandler):
 
     """A handler for databases that support Python DB API v2.0."""
 
+    __version__ = get_distribution("pydap.handlers.sql").version
     extensions = re.compile(r"^.*\.sql$", re.IGNORECASE)
 
     def __init__(self, filepath):
